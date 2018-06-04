@@ -46,6 +46,7 @@ a {
   color: #42DCA3;
 }
 
+/*Navbar item hover effects*/
 a:focus, a:hover {
   text-decoration: none;
   color: #1d9b6c;
@@ -124,7 +125,7 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background: url("../img/google-logo.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -139,10 +140,12 @@ a:focus, a:hover {
 
 .masthead .intro-body .brand-heading {
   font-size: 50px;
+  color: black;
 }
 
 .masthead .intro-body .intro-text {
   font-size: 18px;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -158,6 +161,7 @@ a:focus, a:hover {
   }
 }
 
+/*Arrow Button*/
 .btn-circle {
   font-size: 26px;
   width: 55px;
@@ -167,14 +171,16 @@ a:focus, a:hover {
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  color: white;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid black;
   border-radius: 100% !important;
   background: transparent;
 }
 
+/*Arrow Button Hover Effects*/
 .btn-circle:focus, .btn-circle:hover {
   color: white;
+  border: 2px solid white;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
 }
@@ -184,9 +190,86 @@ a:focus, a:hover {
   padding-bottom: 150px;
 }
 
-.download-section {
+#about { 
+   margin-left: 125px;
+} 
+
+#about-subsection-header-2 { 
+   margin-left: -181px;
+} 
+
+#about-subsection-header-3 { 
+   margin-left: -181px;
+} 
+
+#about-subsection-header-4 { 
+   margin-left: -181px;
+} 
+
+
+#sergey-brin { 
+   float: left; 
+   margin-left: -184px;
+   height: 450px;
+   padding-right: 38px;
+} 
+
+#sergey-and-larry { 
+    float: left;
+    margin-left: -184px;
+    height: 350px;
+    padding-right: 18px;
+    margin-top: 80px;
+} 
+
+#sergey-and-amanda { 
+    float: left;
+    margin-left: -184px;
+    height: 350px;
+    padding-right: 18px;
+} 
+
+#standford-university { 
+   height: 460px;
+} 
+
+#about-description-1 { 
+   text-align: justify;
+} 
+
+#about-description-2 { 
+   text-align: justify;
+   margin-left: -181px;
+} 
+
+#about-description-3 { 
+   text-align: justify;
+   margin-left: -181px;
+} 
+
+#about-description-4 { 
+   text-align: justify;
+   margin-left: -181px;
+} 
+
+.about-subsection-1 { 
+  margin-bottom: 80px;
+}
+
+.about-subsection-2 { 
+  margin-bottom: 80px;
+} 
+
+.about-subsection-3 { 
+  margin-bottom: 80px;
+} 
+.about-subsection-4 { 
+  margin-bottom: 80px;
+} 
+
+.innovations-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background: url("../img/space-background.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -194,18 +277,10 @@ a:focus, a:hover {
   background-size: cover;
 }
 
-#map {
-  width: 100%;
-  height: 300px;
-}
-
 @media (min-width: 992px) {
   .content-section {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-  #map {
-    height: 350px;
   }
 }
 
@@ -281,3 +356,88 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+.portfolio {
+  /*margin-bottom: -30px;*/
+}
+
+.portfolio .portfolio-item {
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background-color: #1d9b6c;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .portfolio {
+    /*margin-bottom: -30px;*/
+  }
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-modal .portfolio-modal-dialog {
+  padding: 3rem 1rem;
+  min-height: calc(100vh - 2rem);
+  margin: 1rem calc(1rem - 8px);
+  position: relative;
+  z-index: 2;
+  -moz-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-modal .portfolio-modal-dialog .close-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.portfolio-modal .portfolio-modal-dialog .close-button i {
+  line-height: 38px;
+}
+
+.portfolio-modal .portfolio-modal-dialog h2 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-modal .portfolio-modal-dialog {
+    min-height: 100vh;
+    padding: 5rem;
+    margin: 3rem calc(3rem - 8px);
+  }
+  .portfolio-modal .portfolio-modal-dialog h2 {
+    font-size: 3rem;
+  }
+}
+
+.mb-5 { 
+   color: black;
+} 
+
+#img-fix { 
+   height: 200px;
+   width: 400px;
+} 
+
+.modal-image { 
+   padding-top: 60px;
+} 
